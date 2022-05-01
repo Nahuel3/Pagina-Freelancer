@@ -19,8 +19,8 @@ body {
 
         //REDES
 
-.instagram, .bsc, .twitter{
-        top: 75px;
+.telegram, .bsc, .twitter{
+         top: 75px;
          font-size: 25px;
          position: absolute;
          cursor:pointer;
@@ -28,69 +28,56 @@ body {
             fill: rgb(229, 143, 14);
         }
         }
-        .instagram{
-        right: 185px;
+        .telegram{
+        right: 170px;
 
        }
 
       .bsc{
-     right: 220px;
+     right: 210px;
      width: 25px;
     height: 25px;
             
         }
 
       .twitter{
-     right: 255px; 
+     right: 250px; 
      }
 
-        .connect {
-            display: inline-flex;
-            background: #000000;
-            border-radius: 20px;
-            font-weight: 400;
-            font-size: 1.2rem;
-            padding: 8px;
-            min-width: 130px;
+
+        .metamask {
+
             box-shadow: rgb(0 0 0 / 59%) 6px 6px 20px 6px;
             color: #f9c34e;
             position: fixed;
-            right: 2%;
-            top: 68px;
-            align-items: center;
-            justify-content: center;
-            border: 1px solid #f9c34e;
+            right: 5%;
+            top: 65px;
+            width: 45px;
+            height: 45px;
+            cursor: pointer;
+            transition: all .8s;
 
-            &:focus{
-                outline: 2px solid #ffffff;
+
+            &:hover{
+              transform: rotate(360deg) ;
             }
             
         }
 
         //boton de conectar METAMASK (aparece con responsive)
 
-        .responsive-connect {
-            display: inline-flex;
-            color: #f9c34e;
-            border-radius: 20px;
-            font-weight: 400;
-            font-size: 1.2rem;
-            padding: 8px;
-            min-width: 130px;
+        .responsive-metamask {
+            position: fixed;
+            right: 5%;
+            top: 55px;
+            cursor: pointer;
             box-shadow: rgb(0 0 0 / 59%) 6px 6px 20px 6px;
-            width: 95%;
-            background: #000000;
-            align-items: center;
-            justify-content: center;
-            border: none;
+            width: 40px;
+            height: 40px;
             margin-top: 15px;
             margin-bottom: 15px;
             display: none;
-            border: 1px solid #f9c34e;
 
-            &:focus{
-                outline: 2px solid #ffffff;
-            }
         }
 
         //contenedor de las cartas
@@ -310,7 +297,7 @@ body {
 @media screen and (max-width:650px){
     .general{
         .contenedor{
-            .instagram{
+            .telegram{
                 position: relative;
                 top: 0px;
                 right: 100px;
@@ -333,10 +320,10 @@ body {
     .general{
 
         .contenedor{
-            .connect{
+            .metamask{
                 display: none;
             }
-            .responsive-connect {
+            .responsive-metamask {
                display: inline-block;
             }
         }

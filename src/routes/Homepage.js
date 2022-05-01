@@ -31,14 +31,15 @@ const Homepage = () => {
       <div className="general">
         <Nav />
         <div className="contenedor">
-          <button onClick={connect} className="connect">CONNECT</button>
+        <img onClick={connect} className='metamask' src='/metamask.png'></img>
       
           <div>
           <h1>Toad logo </h1>
-          <FontAwesomeIcon onClick={handleTelegram} className='instagram' icon={faTelegram} />
+          <FontAwesomeIcon onClick={handleTelegram} className='telegram' icon={faTelegram} />
           <img onClick={handleBsc} className='bsc'  src="/bsc.jpg" alt="" />
           <FontAwesomeIcon onClick={handleTwitter} className='twitter' icon={faTwitter} />
-          <button onClick={connect} className="responsive-connect">CONNECT</button>
+         
+          <img onClick={connect} className='responsive-metamask' src='/metamask.png'></img>
           <h2>The BNB Reward Pool with the tastiest daily return and lowest dev fee</h2>
           </div>
 
