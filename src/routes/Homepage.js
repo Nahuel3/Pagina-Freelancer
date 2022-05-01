@@ -36,7 +36,7 @@ const Homepage = () => {
           <img onClick={connect} className='metamask' src='/metamask.png'></img>
 
           <div>
-            <h1>Toad logo </h1>
+            <img className='toad' src='/Moneytoad.jpg'></img>
 
             <Link to="https://web.telegram.org/z/"  target="_blank" >
             <FontAwesomeIcon onClick={handleTelegram} className='telegram' icon={faTelegram} />

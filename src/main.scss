@@ -44,6 +44,14 @@ body {
      right: 250px; 
      }
 
+     //LOGO SAPO
+
+     .toad{
+         width: 150px;
+         height: 120px;
+         object-fit: cover;
+     }
+
 
         .metamask {
 
@@ -297,6 +305,15 @@ body {
 @media screen and (max-width:650px){
     .general{
         .contenedor{
+
+            .toad{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                left: 30%;
+            }
+
             .telegram{
                 position: relative;
                 top: 0px;
