@@ -6,6 +6,11 @@ const Faq = () => {
     <div>
 
       <FaqHook
+        pregunta="How To Play?"
+        descripcion="Deposit BNB and Pet the Money Toad to start mining. Mine MTOAD and earn BNB. Repeat."
+      />
+
+      <FaqHook
         pregunta="Why can't I connect my wallet?"
         descripcion="Metamask is recommended when using the site. You must use Metamask mobile or another supported wallet to access the site on mobile.
       If you are stuck on the Switch to BSC button  try disabling other crypto wallet extensions They can interfere with the connection to the site."
