@@ -13,7 +13,7 @@ const Faq = () => {
       <FaqHook
         pregunta="Why can't I connect my wallet?"
         descripcion="Metamask is recommended when using the site. You must use Metamask mobile or another supported wallet to access the site on mobile.
-      If you are stuck on the Switch to BSC button  try disabling other crypto wallet extensions They can interfere with the connection to the site."
+        If you are stuck on the Switch to BSC button  try disabling other crypto wallet extensions They can interfere with the connection to the site."
       />
       <FaqHook
         pregunta="What will my daily percentage be?"

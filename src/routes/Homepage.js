@@ -32,13 +32,14 @@ const Homepage = () => {
         <Nav />
         <div className="contenedor">
           <button onClick={connect} className="connect">CONNECT</button>
-          <FontAwesomeIcon onClick={handleTelegram} className='instagram' icon={faTelegram} />
-           <img onClick={handleBsc} className='bsc'  src="/bsc.jpg" alt="" />
-          <FontAwesomeIcon onClick={handleTwitter} className='twitter' icon={faTwitter} />
+      
           <div>
-            <h1>IMAGEN DEL SAPO </h1>
-            <button onClick={connect} className="responsive-connect">CONNECT</button>
-            <h2>The BNB Reward Pool with the tastiest daily return and lowest dev fee</h2>
+          <h1>Toad logo </h1>
+          <FontAwesomeIcon onClick={handleTelegram} className='instagram' icon={faTelegram} />
+          <img onClick={handleBsc} className='bsc'  src="/bsc.jpg" alt="" />
+          <FontAwesomeIcon onClick={handleTwitter} className='twitter' icon={faTwitter} />
+          <button onClick={connect} className="responsive-connect">CONNECT</button>
+          <h2>The BNB Reward Pool with the tastiest daily return and lowest dev fee</h2>
           </div>
 
 
@@ -120,8 +121,8 @@ const Homepage = () => {
           <article>
 
             <div className="contenido-article">
-              <h5>Referral Link</h5>
-              <input type="text" placeholder="Link de referido" ></input>
+              <h5 className="referral-text">Referral</h5>
+              <input type="text" placeholder="Referral Link"></input>
               <p>Earn 12% of the BNB used to bake beans from anyone who uses your referral link</p>
             </div>
 

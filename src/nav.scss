@@ -1,28 +1,28 @@
 header{
-    nav{
-        display: flex;
-        align-items: center;
-        justify-content: left;
-        flex-direction: row;
+    nav{       
 
         ul{
             list-style: none;
+            display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: left;
 
             li{
-
-                h2{
                     color: white;
                     text-decoration: none;
                     font-size: 17px;
-                  }
-    
-                  h3{
-                    color: white;
-                    text-decoration: none;
-                     font-size: 17px;
-                  }
-
+                    padding-right: 15px;
+                    margin-top: 15px;
             }
+
+            
+            a{
+                color: white;
+                text-decoration: none;
+                font-size: 17px;
+                margin-top: 15px;
+              }
 
         }
     }
@@ -34,6 +34,13 @@ header{
             display: flex;
             align-items: center;
             justify-content: center;
+
+            ul{
+                a{
+                   
+                    padding-right: 15px;
+                }
+            }
         }
     }
 }
