@@ -57,7 +57,7 @@ body {
 
             box-shadow: rgb(0 0 0 / 59%) 6px 6px 20px 6px;
             color: #f9c34e;
-            position: fixed;
+            position: absolute;
             right: 5%;
             top: 65px;
             width: 45px;
@@ -75,7 +75,7 @@ body {
         //boton de conectar METAMASK (aparece con responsive)
 
         .responsive-metamask {
-            position: fixed;
+            position: absolute;
             right: 5%;
             top: 55px;
             cursor: pointer;
@@ -109,11 +109,38 @@ body {
                 h3{
                     font-size: 24px;
                     padding-right: 20px;
+                    
                 }
 
                 p{
                     font-size: 24px;
                     padding-left: 20px;
+                    
+                }
+
+            }
+
+            //contenido de las cartas  (creado para el responsive)
+            .content-cards {
+                box-sizing: border-box;
+                display: flex;
+                flex-flow: row wrap;
+                width: 100%;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 12px;
+                padding: 12px;
+
+                h3{
+                    font-size: 24px;
+                    padding-right: 20px;
+                    
+                }
+
+                p{
+                    font-size: 24px;
+                    padding-left: 20px;
+                    
                 }
 
             }
@@ -231,6 +258,7 @@ body {
             background-color: #2e3440;
             margin-bottom: 40px;
             box-shadow: #f9c34e  6px 6px 10px 3px;
+            height: 400px;
             .parte-section {
                 padding-bottom: 24px;
 
@@ -247,11 +275,18 @@ body {
                 h4{
                     font-size: 24px;
                     padding-left: 20px;
+                    
+                }
+
+                .fee{
+                    margin-bottom: 15px;
+                    margin-top: 0px;
                 }
 
                 p{
                     font-size: 24px;
                     padding-right: 20px;
+                   padding-top: 7px;
                 }
 
                 .contenedor-section {
@@ -367,3 +402,60 @@ body {
     }
   
 }
+
+@media screen and (max-width:420px) {
+
+    .general{
+        .contenedor{
+
+            .toad{
+                width: 200px;
+                height: 150px;
+            }
+
+            .responsive-metamask{
+               position: absolute;
+               top: 100px;
+               right: 150px;
+            }
+            .card-token{
+                .content-card{
+                    .text-p{
+                        left: 70%;
+                    }
+                }
+            }
+           
+        }
+    }
+    
+}
+
+@media screen and (max-width:326px){
+
+    .general{
+        .contenedor{
+            .card-token{
+                .content-cards{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:362px){
+
+    .general{
+        .contenedor{
+            .responsive-metamask{
+                position: absolute;
+                top: 130px;
+                right: 150px;
+            }
+        }
+    }
+}
+

@@ -83,7 +83,7 @@ const Homepage = () => {
 
             <div className="barra"></div>
 
-            <div className="content-card">
+            <div className="content-cards">
               <p>Your Rewards</p>
               <h3>0 BNB</h3>
             </div>
@@ -120,8 +120,8 @@ const Homepage = () => {
                 </div>
 
                 <div className="contenido-section">
-                  <h4>Dev Fee</h4>
-                  <p>3%</p>
+                  <h4 className='fee'>Dev Fee</h4>
+                  <p className='fee'>3%</p>
                 </div>
 
               </div>
