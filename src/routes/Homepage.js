@@ -27,6 +27,7 @@ const Homepage = () => {
     activate(connector);
   }
 
+ 
   return (
     <div >
       <div className="general">
@@ -37,7 +38,7 @@ const Homepage = () => {
           <div>
             <h1>Toad logo </h1>
 
-            <Link target="_blank"  to="https://web.telegram.org/z/" >
+            <Link to="https://web.telegram.org/z/"  target="_blank" >
             <FontAwesomeIcon onClick={handleTelegram} className='telegram' icon={faTelegram} />
             </Link>
 
