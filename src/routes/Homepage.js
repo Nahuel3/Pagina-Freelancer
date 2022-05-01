@@ -3,7 +3,8 @@ import Nav from "../componentes/nav";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faTelegram } from '@fortawesome/free-brands-svg-icons';
 import { useWeb3React } from '@web3-react/core';
-import {connector} from '../config/web3';
+import { connector } from '../config/web3';
+import { Link } from 'react-router-dom'
 
 
 const handleTelegram = () => {
@@ -20,27 +21,36 @@ const handleTwitter = () => {
 
 const Homepage = () => {
 
- const {activate} = useWeb3React();
+  const { activate } = useWeb3React();
 
- const connect = () => {
-  activate(connector);
- }
+  const connect = () => {
+    activate(connector);
+  }
 
   return (
     <div >
       <div className="general">
         <Nav />
         <div className="contenedor">
-        <img onClick={connect} className='metamask' src='/metamask.png'></img>
-      
+          <img onClick={connect} className='metamask' src='/metamask.png'></img>
+
           <div>
-          <h1>Toad logo </h1>
-          <FontAwesomeIcon onClick={handleTelegram} className='telegram' icon={faTelegram} />
-          <img onClick={handleBsc} className='bsc'  src="/bsc.jpg" alt="" />
-          <FontAwesomeIcon onClick={handleTwitter} className='twitter' icon={faTwitter} />
-         
-          <img onClick={connect} className='responsive-metamask' src='/metamask.png'></img>
-          <h2>The BNB Reward Pool with the tastiest daily return and lowest dev fee</h2>
+            <h1>Toad logo </h1>
+
+            <Link target="_blank"  to="https://web.telegram.org/z/" >
+            <FontAwesomeIcon onClick={handleTelegram} className='telegram' icon={faTelegram} />
+            </Link>
+
+            <Link to="https://bscscan.com/" target="_blank">
+            <img onClick={handleBsc} className='bsc' src="/bsc.jpg" alt="" />
+            </Link>
+
+            <Link to="https://twitter.com/" target="_blank">
+            <FontAwesomeIcon onClick={handleTwitter} className='twitter' icon={faTwitter} />
+            </Link>
+
+            <img onClick={connect} className='responsive-metamask' src='/metamask.png'></img>
+            <h2>The BNB Reward Pool with the tastiest daily return and lowest dev fee</h2>
           </div>
 
 

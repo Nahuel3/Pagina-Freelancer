@@ -9,7 +9,7 @@ const nav = () => {
                 <li>Whitepaper</li>
                 <li>Audit report</li>
 
-                <Link to="/faq">
+                <Link to="/faq" target="_blank">
                 <a>FAQ</a>
                 </Link>
             </ul>
