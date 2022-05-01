@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+body {
+    background-color: #000000;
+    box-sizing: border-box;
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.general {
+    padding: 48px 16px;
+
+    .contenedor {
+        max-width: 400px;
+        margin: 0px auto;
+
+        //REDES
+
+        .instagram, .bsc, .twitter{
+            top: 75px;
+            font-size: 25px;
+            position: absolute;
+            cursor:pointer;
+        }
+        .instagram{
+            right: 185px;
+
+        }
+
+        .bsc{
+            right: 220px;
+            width: 25px;
+            height: 25px;
+            
+        }
+
+        .twitter{
+                right: 255px; 
+        }
+
+        .connect {
+            display: inline-flex;
+            background: #000000;
+            border-radius: 20px;
+            font-weight: 400;
+            font-size: 1.2rem;
+            padding: 8px;
+            min-width: 130px;
+            box-shadow: rgb(0 0 0 / 59%) 6px 6px 20px 6px;
+            color: #f9c34e;
+            position: fixed;
+            right: 2%;
+            top: 68px;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #f9c34e;
+            
+        }
+
+        //boton de conectar METAMASK (aparece con responsive)
+
+        .responsive-connect {
+            display: inline-flex;
+            color: #f9c34e;
+            border-radius: 20px;
+            font-weight: 400;
+            font-size: 1.2rem;
+            padding: 8px;
+            min-width: 130px;
+            box-shadow: rgb(0 0 0 / 59%) 6px 6px 20px 6px;
+            width: 95%;
+            background: #000000;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            display: none;
+            border: 1px solid #f9c34e;
+        }
+
+        //contenedor de las cartas
+        .card-token {
+            box-shadow: rgba(255, 255, 255, 0.59) 6px 6px 20px 6px;
+            border-radius: 20px;
+            background-color: #2e3440;
+            margin-bottom: 24px;
+
+            //contenido de las cartas
+            .content-card {
+                box-sizing: border-box;
+                display: flex;
+                flex-flow: row wrap;
+                width: 100%;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 24px;
+                padding: 12px 24px;
+
+            }
+
+            //input donde se ingresa el token
+            .value-token {
+                font-size: 24px;
+                font-weight: 500;
+                padding: 12px 90px 12px 16px;
+                text-align: right;
+                border-radius: 0px;
+                border: 1px solid rgb(85, 85, 85);
+                background: #f9c34e;
+                width: 100%;
+                outline: none;
+
+            }
+
+            input[type=number]::-webkit-inner-spin-button, 
+            input[type=number]::-webkit-outer-spin-button { 
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none; 
+            }
+
+            .text-p {
+                margin: 0px;
+                font-size: 24px;
+                position: relative;
+                bottom: 45px;
+                left: 80%;
+                font-weight: 500;
+                color: rgb(0, 0, 0);
+                
+            }
+
+            .content-card2 {
+                margin-bottom: 24px;
+            }
+
+            .boton-compra {
+                display: inline-flex;
+                background: #f9c34e;
+                border-radius: 20px;
+                font-weight: 400;
+                font-size: 1.2rem;
+                padding: 8px;
+                width: 90%;
+                box-shadow: rgb(0 0 0 / 59%) 6px 6px 20px 6px;
+                color: rgb(0, 0, 0);
+                align-items: center;
+                justify-content: center;
+                border: none;
+
+            }
+
+            .barra {
+                height: 2px;
+                width: 85%;
+                background-color: rgb(0, 0, 0);
+                position: relative;
+                left: 25px;
+            }
+
+            .content-button {
+                box-sizing: border-box;
+                display: flex;
+                flex-flow: row wrap;
+                width: 100%;
+
+                .contenido-button {
+                    box-sizing: border-box;
+                    margin: 24px 8px 40px 10px;
+                    flex-direction: row;
+                    flex-grow: 1;
+
+                    .button {
+                        display: inline-flex;
+                        background: #f9c34e;
+                        border-radius: 20px;
+                        font-weight: 400;
+                        font-size: 1.2rem;
+                        padding: 8px;
+                        width: 90%;
+                        box-shadow: rgb(0 0 0 / 59%) 6px 6px 20px 6px;
+                        color: rgb(0, 0, 0);
+                        align-items: center;
+                        justify-content: center;
+                        border: none;
+                    }
+                }
+            }
+        }
+
+        //PARTE 2 DE LAS CARDS
+        section {
+            margin-top: 40px;
+            overflow: hidden;
+            border-radius: 20px;
+            background-color: #2e3440;
+            margin-bottom: 40px;
+            box-shadow: rgba(255, 255, 255, 0.59) 6px 6px 20px 6px;
+            .parte-section {
+                padding-bottom: 24px;
+
+                h3 {
+                    margin: 0px;
+                    font-size: 24px;
+                    border-bottom: 3px #f9c34e solid;
+                    padding-bottom: 8px;
+                    padding-top: 8px;
+                    text-align: left;
+                    padding-left: 20px;
+                }
+
+                .contenedor-section {
+                    padding-top: 16px;
+
+                    .contenido-section {
+                        box-sizing: border-box;
+                        display: flex;
+                        flex-flow: row wrap;
+                        width: 100%;
+                        justify-content: space-between;
+                        padding: 12px 24px;
+                    }
+                }
+
+            }
+        }
+
+        //PARTE 3 DE LAS CARDS
+
+        article{
+            overflow: hidden;
+            box-shadow: rgba(255, 255, 255, 0.59) 6px 6px 20px 6px;
+            border-radius: 20px;
+            background-color: #2e3440;
+            margin-top: 30px;
+            .contenido-article{
+                padding-left: 8px;
+                padding-right: 8px;
+                color: white;
+
+                input{ 
+                    display: inline-flex;
+                    background: #f9c34e;
+                    border-radius: 20px;
+                    font-weight: 400;
+                    font-size: 1.2rem;
+                    padding: 8px;
+                    min-width: 130px;
+                    box-shadow: rgb(0 0 0 / 59%) 6px 6px 20px 6px;
+                    width: 95%;
+                    align-items: center;
+                    justify-content: center;
+                    border: none;
+                    margin-top: 15px;
+                    margin-bottom: 15px;
+                    color: white;
+                }
+
+                input::placeholder{
+                    color: rgb(0, 0, 0);
+                    padding-left: 15px;
+                }
+            }
+
+        }
+    }
+}
+
+//RESPONSIVE ICONOS REDES
+
+@media screen and (max-width:650px){
+    .general{
+        .contenedor{
+            .instagram{
+                position: relative;
+                top: 0px;
+                right: 100px;
+            }
+            .bsc{
+                position: relative;
+                top: 0px;
+                right: 0px;
+            }
+            .twitter{
+                position: relative;
+                top: 0px;
+                left: 120px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:520px){
+    .general{
+
+        .contenedor{
+            .connect{
+                display: none;
+            }
+            .responsive-connect {
+               display: inline-block;
+            }
+        }
+
+    }
+  
+}

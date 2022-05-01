@@ -1,0 +1,39 @@
+header{
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        flex-direction: row;
+
+        ul{
+            list-style: none;
+
+            li{
+
+                h2{
+                    color: white;
+                    text-decoration: none;
+                    font-size: 17px;
+                  }
+    
+                  h3{
+                    color: white;
+                    text-decoration: none;
+                     font-size: 17px;
+                  }
+
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width:520px){
+    header{
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
