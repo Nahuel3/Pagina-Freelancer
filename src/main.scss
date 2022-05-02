@@ -423,11 +423,7 @@ body {
                 height: 150px;
             }
 
-            .responsive-metamask{
-               position: absolute;
-               top: 100px;
-               right: 150px;
-            }
+          
             .card-token{
                 .content-card{
                     .text-p{
@@ -445,11 +441,18 @@ body {
 
     .general{
         .contenedor{
+
+            .responsive-metamask{
+                position: absolute;
+                top: 100px;
+                right: 150px;
+             }
             .card-token{
                 .content-cards{
                     display: flex;
                     align-items: center;
                     justify-content: center;
+
 
                     h3{
                         padding-left: 50px;
@@ -460,6 +463,19 @@ body {
                     }
                 }
             }
+        }
+    }
+}
+
+//metamask responsive
+@media screen and  (max-width:362px){
+    .general{
+        .contenedor{
+            .responsive-metamask{
+                position: absolute;
+                top: 140px;
+                right: 150px;
+             }
         }
     }
 }
