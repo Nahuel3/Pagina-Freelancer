@@ -21,7 +21,7 @@ body {
 
 .telegram, .bsc, .twitter{
          top: 75px;
-         font-size: 25px;
+         font-size: 32px;
          position: absolute;
          cursor:pointer;
         path{
@@ -35,9 +35,9 @@ body {
 
       .bsc{
      right: 210px;
-     width: 25px;
-    height: 25px;
-            
+     width: 30px;
+    height: 30px;
+             
         }
 
       .twitter{
@@ -377,47 +377,45 @@ body {
                 position: relative;
                 left: 15%;
                 top: 8%;
+                
+            }
+
+            .metamask{
+                position: relative;
+                top: 295px;
+                left: 120px;
             }
 
             .telegram{
                 position: relative;
                 top: 0px;
-                right: 100px;
+                right: 80px;
             }
             .bsc{
                 position: relative;
-                top: 0px;
-                right: 0px;
+                top: 2px;
+                right: 30px;
             }
             .twitter{
                 position: relative;
                 top: 0px;
-                left: 120px;
+                left: 20px;
             }
         }
     }
 }
 
-@media screen and (max-width:520px){
-    .general{
-
-        .contenedor{
-            .metamask{
-                display: none;
-            }
-            .responsive-metamask {
-               display: inline-block;
-            }
-        }
-
-    }
-  
-}
 
 @media screen and (max-width:420px) {
 
     .general{
         .contenedor{
+
+            .metamask{
+                position: relative;
+                top: 195px;
+               
+            }
 
             .toad{
                 width: 200px;
@@ -450,6 +448,12 @@ body {
                 height: 135px;
                 width: 200px;
               
+            }
+
+            .metamask{
+                position: relative;
+                top: 180px;
+               
             }
 
            

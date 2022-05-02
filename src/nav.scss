@@ -16,6 +16,7 @@ header{
                     margin-top: 15px;
                     transition: 300ms ease-in-out;
                     cursor: pointer;
+                   
             }
 
             
@@ -33,13 +34,13 @@ header{
  }
 }
 
-@media screen and (max-width:520px){
+@media screen and (max-width:650px){
     header{
         nav{
             display: flex;
             align-items: center;
             justify-content: center;
-
+            margin-bottom:-65px;
             ul{
 
                 a{
