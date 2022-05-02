@@ -26,7 +26,7 @@ header{
                 margin-top: 15px;
                 transition: 300ms ease-in-out;
                 cursor: pointer;
-
+                margin-right: 10px;
 
         }
     }
@@ -41,6 +41,7 @@ header{
             justify-content: center;
 
             ul{
+
                 a{
                    
                     padding-right: 15px;
@@ -48,4 +49,50 @@ header{
             }
         }
     }
+}
+
+@media  screen and (max-width:387px) {
+
+    header{
+        nav{
+           
+
+            ul{
+
+                
+                li{
+                   font-size: 15px;
+                }
+                
+                a{
+                   
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    
+}
+
+@media  screen and (max-width:363px) {
+
+    header{
+        nav{
+           
+
+            ul{
+
+                
+                li{
+                   font-size: 13px;
+                }
+                
+                a{
+                   
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+    
 }
