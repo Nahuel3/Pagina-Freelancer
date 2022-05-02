@@ -421,6 +421,9 @@ body {
             .toad{
                 width: 200px;
                 height: 150px;
+                position: relative;
+                left: 25%;
+                top: 3%;
             }
 
           
@@ -441,6 +444,11 @@ body {
 
     .general{
         .contenedor{
+
+            .toad{
+                height: 135px;
+                width: 200px;
+            }
 
             .responsive-metamask{
                 position: absolute;
@@ -473,9 +481,14 @@ body {
         .contenedor{
             .responsive-metamask{
                 position: absolute;
-                top: 140px;
+                top: 120px;
                 right: 150px;
              }
+
+             .toad{
+                position: relative;
+                top: 0% !important;
+            }
         }
     }
 }
@@ -496,7 +509,7 @@ body {
             }
             .responsive-metamask{
                 position: absolute;
-                top: 130px;
+                top: 120px;
                 right: 150px;
             }
 
